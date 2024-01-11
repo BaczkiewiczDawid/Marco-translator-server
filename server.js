@@ -28,7 +28,7 @@ app.post('/translate', async (req, res) => {
             },
             params: {
                 'api-version': '3.0',
-                'from': 'pl',
+                // 'from': 'autodetect',
                 'to': req.body.targetLanguage || 'en',
             },
             data: [{
